@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>豆瓣Top250</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'mymovie/style.css' %}">
+    <!--<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+</head>
+<body>
+<h1 align="center">豆瓣电影Top250</h1>
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>排名</th>
+                <th>标题</th>
+                <th>导演</th>
+                <th>主演</th>
+                <th>发行时间</th>
+                <th>地区</th>
+                <th>类型</th>
+                <th>评分</th>
+                <th>海报</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for line in p_movie %}
+                <tr>
+                    <td>{{ line.index }}</td>
+                    <td>{{ line.title }}</td>
+                    <td>{{ line.director }}</td>
+                    <td>{{ line.actor }}</td>
+                    <td>{{ line.time }}</td>
+                    <td>{{ line.region }}</td>
+                    <td>{{ line.type }}</td>
+                    <td>{{ line.score }}</td>
+                    <td><img src="{{ line.images }}"/></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% for film in p_movie %}
+    {{film.full_name|upper }}<br>
+{% endfor %}
+<div class="pagination">
+    <span class="step-links">
+        {% if p_movie.has_previous %}
+            <a href="?page=1">&laquo; 首页</a>
+            <a href="?page={{ p_movie.previous_page_number }}">前一页</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ p_movie.number }} of {{ p_movie.paginator.num_pages }}.
+        </span>
+
+        {% if p_movie.has_next %}
+            <a href="?page={{ p_movie.next_page_number }}">后一页</a>
+            <a href="?page={{ p_movie.paginator.num_pages }}">尾页 &raquo;</a>
+        {% endif %}
+    </span>
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WeatherForecast</title>
+</head>
+<body>
+<h1 align="center">未来8天天气预报</h1>
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>日期</th>
+                <th>天气</th>
+                <th>温度</th>
+                <th>风向</th>
+                <th>风力</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for line in weatherlist %}
+                <tr>
+                    <td>{{ line.date }}</td>
+                    <td>{{ line.weather }}</td>
+                    <td>{{ line.temp }}</td>
+                    <td>{{ line.wind }}</td>
+                    <td>{{ line.strength }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
