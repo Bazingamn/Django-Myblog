@@ -18,3 +18,12 @@ class Weathers(models.Model):
     temp = models.CharField(max_length=255)
     wind = models.CharField(max_length=255)
     strength = models.CharField(max_length=255)
+
+class JDPhone(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=255)
+    price = models.CharField(max_length=255)
+    commit = models.CharField(max_length=255)
+    shop = models.CharField(max_length=255)
+    icons = models.CharField(max_length=255)
+    image = models.CharField(max_length=255)
