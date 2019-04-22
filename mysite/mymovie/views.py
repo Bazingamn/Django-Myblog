@@ -21,3 +21,8 @@ def show(request):
 def ShowWeather(request):
     weatherList = models.Weathers.objects.all()
     return render(request, 'mymovie/weathershow.html', {'weatherlist': weatherList})
+
+
+def ShowPhone(request):
+    phoneList = models.JDPhone.objects.all()
+    return render(request, 'mymovie/phoneshow.html', {'phonelist': phoneList})

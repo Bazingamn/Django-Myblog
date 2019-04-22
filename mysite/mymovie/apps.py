@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-# class MymovieConfig(AppConfig):
-#     name = 'mymovie'
+class MymovieConfig(AppConfig):
+    name = 'mymovie'

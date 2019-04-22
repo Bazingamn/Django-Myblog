@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>京东手机商品展示</title>
+</head>
+<body>
+<h1 align="center">京东手机商品展示</h1>
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>编号</th>
+                <th>手机</th>
+                <th>价格</th>
+                <th>评价人数</th>
+                <th>店铺</th>
+                <th>标签</th>
+                <th>图片</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for line in phonelist %}
+                <tr>
+                    <td>{{ line.id }}</td>
+                    <td>{{ line.name }}</td>
+                    <td>{{ line.price }}</td>
+                    <td>{{ line.commit }}</td>
+                    <td>{{ line.shop }}</td>
+                    <td>{{ line.icons }}</td>
+                    <td><img src="{{ line.image }}"/></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
