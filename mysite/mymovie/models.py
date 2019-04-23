@@ -24,7 +24,7 @@ class Weathers(models.Model):
     strength = models.CharField(max_length=255)
 
     def __str__(self):
-        return self.weather
+        return self.date
 
 
 class JDPhone(models.Model):
