@@ -11,6 +11,10 @@ class Movies(models.Model):
     score = models.CharField(max_length=255)
     images = models.CharField(max_length=255)
 
+    def __str__(self):
+        return self.title
+
+
 class Weathers(models.Model):
     id = models.AutoField(primary_key=True)
     date = models.CharField(max_length=255)
@@ -18,6 +22,10 @@ class Weathers(models.Model):
     temp = models.CharField(max_length=255)
     wind = models.CharField(max_length=255)
     strength = models.CharField(max_length=255)
+
+    def __str__(self):
+        return self.weather
+
 
 class JDPhone(models.Model):
     id = models.AutoField(primary_key=True)
@@ -27,3 +35,6 @@ class JDPhone(models.Model):
     shop = models.CharField(max_length=255)
     icons = models.CharField(max_length=255)
     image = models.CharField(max_length=255)
+
+    def __str__(self):
+        return self.name
