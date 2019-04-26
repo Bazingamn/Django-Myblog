@@ -31,8 +31,9 @@ def parse_one_page(html):
             'score': item[8],
             'images': item[1]
         }
-        write_to_mysql(data)
-    return items
+        # write_to_mysql(data)
+    # return items
+        print(data)
 
 def write_to_file(content):
     with open('result.txt', 'a', encoding='utf-8') as f:
@@ -60,8 +61,9 @@ def write_to_mysql(data):
 def main(start):
     url = 'https://movie.douban.com/top250?start=' + str(start)
     html = get_one_page(url)
-    for item in parse_one_page(html):
-        print(item)
+    # for item in parse_one_page(html):
+    #     print(item)
+    parse_one_page(html)
 
 if __name__ == '__main__':
      # for i in range(10):
