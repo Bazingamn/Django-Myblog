@@ -1,8 +1,6 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 from mymovie import models
 from django.core.paginator import Paginator
-from django.views import generic
 
 
 def Homepage(request):
