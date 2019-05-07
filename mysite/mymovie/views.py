@@ -4,8 +4,10 @@ from django.core.paginator import Paginator
 
 
 def Homepage(request):
-    return render(request, 'mymovie/index.html')
+    return render(request, 'mymovie/myblog.html')
 
+def ShowScrapeData(request):
+    return render(request, 'mymovie/index.html')
 
 def show(request):
     mylist = models.Movies.objects.all()
