@@ -3,13 +3,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}{% endblock %}</title>
+    <title>Bruce's Blog</title>
     <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'bootstrap/css/blog.css' %}" rel="stylesheet">
+    <link href="{% static 'bootstrap/css/grid.css' %}" rel="stylesheet">
 </head>
 <body>
+    {% include 'header.html' %}
 
-    {% block content %}{% endblock content %}
+    {% block content %} {% endblock content %}
+
+    {% include 'footer.html' %}
 
     <script src="{% static 'jquery/jquery.js' %"></script>
     <script src="{% static 'popper/popper.js' %"></script>

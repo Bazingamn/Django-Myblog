@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<a href="{% url 'mymovie:show' %}">豆瓣电影top250</a>
-<a href="{% url 'mymovie:phoneshow' %}">京东手机商品展示</a>
-<a href="{% url 'mymovie:weathershow' %}">天气预报</a>
-</body>
-</html>
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block content %}
+
+<div class="container">
+    <a href="{% url 'mymovie:show' %}">豆瓣电影top250</a>
+    <a href="{% url 'mymovie:phoneshow' %}">京东手机商品展示</a>
+    <a href="{% url 'mymovie:weathershow' %}">天气预报</a>
+</div>
+
+{% endblock content %}
