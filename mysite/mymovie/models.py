@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Movies(models.Model):
     index = models.AutoField(primary_key=True)
     title = models.CharField(max_length=255)
