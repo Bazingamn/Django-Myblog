@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'userprofile.apps.UserprofileConfig',
     'article.apps.ArticleConfig',
     'mymovie.apps.MymovieConfig',
     'polls.apps.PollsConfig',
