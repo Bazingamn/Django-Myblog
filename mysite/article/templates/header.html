@@ -17,7 +17,7 @@
                       {{ user.username }}
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">退出登录</a>
+                        <a class="dropdown-item" href="{% url 'userprofile:logout' %}">退出登录</a>
                     </div>
                 </li>
             {% else %}
@@ -33,6 +33,7 @@
             <a class="p-2 text-muted" href="{% url 'article:article_list' %}">文章列表</a>
             <a class="p-2 text-muted" href="{% url 'article:article_create' %}">写文章</a>
             <a class="p-2 text-muted" href="{% url 'mymovie:scrapedata' %}">爬虫数据</a>
+            <a class="p-2 text-muted" href="{% url 'polls:index' %}">Avengers</a>
             <a class="p-2 text-muted" href="#">Technology</a>
             <a class="p-2 text-muted" href="#">Design</a>
             <a class="p-2 text-muted" href="#">Culture</a>
@@ -40,7 +41,6 @@
             <a class="p-2 text-muted" href="#">Politics</a>
             <a class="p-2 text-muted" href="#">Opinion</a>
             <a class="p-2 text-muted" href="#">Science</a>
-            <a class="p-2 text-muted" href="{% url 'polls:index' %}">Avengers</a>
         </nav>
     </div>
  </div>
