@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.utils import timezone
+from django.urls import reverse
 
 # Create your models here.
 class ArticlePost(models.Model):
@@ -19,8 +20,14 @@ class ArticlePost(models.Model):
     # 文章更新时间。参数 auto_now=True 指定每次数据更新时自动写入当前时间
     updated_time = models.DateTimeField(auto_now=True)
 
+    total_views = models.PositiveIntegerField(default=0)
+
     class Meta:
         ordering = ('-created_time',)
 
     def __str__(self):
         return self.title
+
+    # 获取文章地址
+    def get_absolute_url(self):
+        return reverse('article:article_detail', args=[self.id])

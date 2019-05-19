@@ -1,9 +1,13 @@
+from django.contrib.auth.decorators import login_required
+from django.core.paginator import Paginator
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from article import models
 from .forms import ArticlePostForm
+from comment.models import Comment
 from django.contrib.auth.models import User
 import markdown
+from comment.forms import CommentForm
 
 
 # Create your views here.
@@ -11,12 +15,27 @@ def Homepage(request):
     return render(request, 'article/myblog.html')
 
 def aricle_list(request):
-    articles = models.ArticlePost.objects.all()
-    content = {'articles': articles}
-    return render(request, 'article/list.html', content)
+    if request.GET.get('order') == 'total_views':
+        article_list = models.ArticlePost.objects.all().order_by('-total_views')
+        order = 'total_views'
+    else:
+        article_list = models.ArticlePost.objects.all()
+        order = 'normal'
+    paginator = Paginator(article_list, 3)
+    page = request.GET.get('page')
+    articles = paginator.get_page(page)
+    context = {'articles': articles, 'order':order}
+    return render(request, 'article/list.html', context)
 
 def article_detail(request, id):
     article = models.ArticlePost.objects.get(id=id)
+
+    # 取出文章评论
+    comments = Comment.objects.filter(article=id)
+
+    # 浏览量 +1
+    article.total_views += 1
+    article.save(update_fields=['total_views'])
 
     #将markdown语法渲染成html样式
     article.body = markdown.markdown(article.body,
@@ -26,7 +45,7 @@ def article_detail(request, id):
              # 语法高亮扩展
              'markdown.extensions.codehilite',
          ])
-    content = {'article': article}
+    content = {'article': article, 'comments': comments}
     return render(request, 'article/detail.html', content)
 
 def article_create(request):
@@ -57,6 +76,7 @@ def article_delete(request,id):
     return redirect("article:article_list")
 
 
+@login_required(login_url='/userprofile/login/')
 def article_update(request, id):
     #获取需要修改的文章对象
     article = models.ArticlePost.objects.get(id=id)
