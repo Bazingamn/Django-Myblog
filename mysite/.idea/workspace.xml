@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="61f610be-eba9-4222-b1b2-37aaa587192a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/article/static/bootstrap/css/carousel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/article/static/bootstrap/css/navbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/article/static/images/img1.jpeg!heading" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/article/static/images/img2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/article/static/images/img3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mymovie/static/bootstrap/css/navbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../12306verify/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../12306verify/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../12306verify/autologin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../12306verify/autologin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../12306verify/verify.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../12306verify/verify.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/article/templates/article/myblog.html" beforeDir="false" afterPath="$PROJECT_DIR$/article/templates/article/myblog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/article/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/article/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/article/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/article/templates/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mymovie/templates/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mymovie/templates/footer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mymovie/templates/header.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mymovie/templates/mymovie/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mymovie/templates/mymovie/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mymovie/templates/mymovie/phoneshow.html" beforeDir="false" afterPath="$PROJECT_DIR$/mymovie/templates/mymovie/phoneshow.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mymovie/templates/mymovie/weathershow.html" beforeDir="false" afterPath="$PROJECT_DIR$/mymovie/templates/mymovie/weathershow.html" afterDir="false" />
-    </list>
+    <list default="true" id="61f610be-eba9-4222-b1b2-37aaa587192a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,8 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/article/static/bootstrap/css/carousel.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="52" lean-forward="true" selection-start-line="2" selection-start-column="52" selection-end-line="2" selection-end-column="52" />
+            <state relative-caret-position="200">
+              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -270,7 +250,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19459888" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -662,8 +643,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/article/static/bootstrap/css/carousel.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="52" lean-forward="true" selection-start-line="2" selection-start-column="52" selection-end-line="2" selection-end-column="52" />
+        <state relative-caret-position="200">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
         </state>
       </provider>
     </entry>
