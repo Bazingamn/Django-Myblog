@@ -1,38 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>京东手机商品展示</title>
-</head>
-<body>
-<h1 align="center">京东手机商品展示</h1>
-<div>
-    <table>
-        <thead>
-            <tr>
-                <th>编号</th>
-                <th>手机</th>
-                <th>价格</th>
-                <th>评价人数</th>
-                <th>店铺</th>
-                <th>标签</th>
-                <th>图片</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for line in phonelist %}
-                <tr>
-                    <td>{{ line.id }}</td>
-                    <td>{{ line.name }}</td>
-                    <td>{{ line.price }}</td>
-                    <td>{{ line.commit }}</td>
-                    <td>{{ line.shop }}</td>
-                    <td>{{ line.icons }}</td>
-                    <td><img src="{{ line.image }}"/></td>
-                </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block content %}
+<div class="container">
+    <h2 class="mt-4">京东手机商品展示</h2>
+    <div>
+        {% for line in phonelist %}
+            <div class="row mb-9">
+                <div class="col-1 themed-grid-col">{{ line.id }}</div>
+                <div class="col-3 themed-grid-col">{{ line.name }}</div>
+                <div class="col-1 themed-grid-col">{{ line.price }}</div>
+                <div class="col-1 themed-grid-col">{{ line.commit }}</div>
+                <div class="col-2 themed-grid-col">{{ line.shop }}</div>
+                <div class="col-1 themed-grid-col">{{ line.icons }}</div>
+                <div class="col-3 themed-grid-col"><img src="{{ line.image }}"/></div>
+            </div>
+        {% endfor %}
+    </div>
 </div>
-</body>
-</html>
+
+{% endblock content %}

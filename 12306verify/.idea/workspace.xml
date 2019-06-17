@@ -2,14 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5dec9bf-9864-4c1f-bc2a-78b25ff83efa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/autologin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/buy_tickets.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/check_ticket.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/verification.py" beforeDir="false" afterPath="$PROJECT_DIR$/verification.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zhihu.py" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mysite/article/static/bootstrap/css/carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mysite/article/static/bootstrap/css/navbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mysite/mymovie/static/bootstrap/css/navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autologin.py" beforeDir="false" afterPath="$PROJECT_DIR$/autologin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/verify.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/verify.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mysite/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mysite/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mysite/article/templates/article/myblog.html" beforeDir="false" afterPath="$PROJECT_DIR$/../mysite/article/templates/article/myblog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mysite/article/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/../mysite/article/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mysite/article/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/../mysite/article/templates/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mysite/mymovie/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mysite/mymovie/templates/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mysite/mymovie/templates/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mysite/mymovie/templates/mymovie/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../mysite/mymovie/templates/mymovie/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mysite/mymovie/templates/mymovie/phoneshow.html" beforeDir="false" afterPath="$PROJECT_DIR$/../mysite/mymovie/templates/mymovie/phoneshow.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mysite/mymovie/templates/mymovie/weathershow.html" beforeDir="false" afterPath="$PROJECT_DIR$/../mysite/mymovie/templates/mymovie/weathershow.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/autologin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-537">
-              <caret line="42" column="30" lean-forward="true" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+            <state relative-caret-position="509">
+              <caret line="75" column="21" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -55,7 +62,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-12" />
     <option name="y" value="-12" />
     <option name="width" value="1944" />
@@ -85,7 +92,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mysite" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -171,7 +178,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29840142" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38188276" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -220,8 +227,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/autologin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-537">
-          <caret line="42" column="30" lean-forward="true" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+        <state relative-caret-position="509">
+          <caret line="75" column="21" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>

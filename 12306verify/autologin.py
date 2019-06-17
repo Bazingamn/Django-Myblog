@@ -67,13 +67,13 @@ class Demo():
         self.login()
         time.sleep(3)
         self.getVerifyImage()
-        time.sleep(2)
+        time.sleep(1)
         self.getVerifyResult()
-        time.sleep(2)
+        time.sleep(1)
         self.moveAndClick()
-        time.sleep(2)
+        time.sleep(1)
         self.submit()
-        time.sleep(5)
+        time.sleep(10)
 
 if __name__ == '__main__':
     Demo()()

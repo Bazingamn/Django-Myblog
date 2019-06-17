@@ -1,34 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>WeatherForecast</title>
-</head>
-<body>
-<h1 align="center">未来8天天气预报</h1>
-<div>
-    <table>
-        <thead>
-            <tr>
-                <th>日期</th>
-                <th>天气</th>
-                <th>温度</th>
-                <th>风向</th>
-                <th>风力</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for line in weatherlist %}
-                <tr>
-                    <td>{{ line.date }}</td>
-                    <td>{{ line.weather }}</td>
-                    <td>{{ line.temp }}</td>
-                    <td>{{ line.wind }}</td>
-                    <td>{{ line.strength }}</td>
-                </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block content %}
+
+<div class="container">
+    <h2 class="mt-4">未来8天天气预报</h2>
+    <div>
+        <div class="row mb-9" style="font:bold;">
+            <div class="col-3 themed-grid-col">日期</div>
+            <div class="col-2 themed-grid-col">天气</div>
+            <div class="col-2 themed-grid-col">温度</div>
+            <div class="col-3 themed-grid-col">风向</div>
+            <div class="col-2 themed-grid-col">风力</div>
+        </div>
+        {% for line in weatherlist %}
+            <div class="row mb-9">
+                <div class="col-3 themed-grid-col">{{ line.date }}</div>
+                <div class="col-2 themed-grid-col">{{ line.weather }}</div>
+                <div class="col-2 themed-grid-col">{{ line.temp }}</div>
+                <div class="col-3 themed-grid-col">{{ line.wind }}</div>
+                <div class="col-2 themed-grid-col">{{ line.strength }}</div>
+            </div>
+        {% endfor %}
+    </div>
 </div>
-</body>
-</html>
+
+{% endblock content %}

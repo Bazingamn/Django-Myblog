@@ -3,11 +3,18 @@
 
 
 {% block content %}
-
 <div class="container">
-    <a href="{% url 'mymovie:show' %}">豆瓣电影top250</a>
-    <a href="{% url 'mymovie:phoneshow' %}">京东手机商品展示</a>
-    <a href="{% url 'mymovie:weathershow' %}">天气预报</a>
+  <div class="row mb-3">
+    <div class="col-4 themed-grid-col">
+        <a href="{% url 'mymovie:show' %}">豆瓣电影top250</a>
+    </div>
+    <div class="col-4 themed-grid-col">
+        <a href="{% url 'mymovie:phoneshow' %}">京东手机商品展示</a>
+    </div>
+    <div class="col-4 themed-grid-col">
+        <a href="{% url 'mymovie:weathershow' %}">天气预报</a>
+    </div>
+  </div>
 </div>
 
 {% endblock content %}

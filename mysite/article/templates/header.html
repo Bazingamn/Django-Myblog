@@ -1,49 +1,45 @@
- <div class="container">
-    <header class="blog-header py-3">
-      <div class="row flex-nowrap justify-content-between align-items-center">
-        <div class="col-4 pt-1">
-          <a class="text-muted" href="#">订阅</a>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <a class="navbar-brand" href="{% url 'article:homepage' %}">Bruce Wang</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarsExample04">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'article:homepage' %}">主页 <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'article:article_list' %}">文章列表</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'article:article_create' %}">发表文章</a>
+      </li>
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="{% url 'mymovie:scrapedata' %}" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">爬虫数据</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown04">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
         </div>
-        <div class="col-4 text-center">
-          <a class="blog-header-logo text-dark" href="{% url 'article:homepage' %}">博客</a>
-        </div>
-        <div class="col-4 d-flex justify-content-end align-items-center">
-          <a class="text-muted" href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24" focusable="false"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
-          </a>
-            {% if user.is_authenticated %}
-                <li class="nav-item dropdown">
-                    <a class="btn btn-sm btn-outline-secondary" href="#">
-                      {{ user.username }}
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="{% url 'userprofile:logout' %}">退出登录</a>
-                    </div>
-                </li>
-            {% else %}
-                <a class="btn btn-sm btn-outline-secondary" href="{% url 'userprofile:login' %}">登录</a>
-            {% endif %}
-        </div>
-          <div class="col-4 align-items-center">
-              <a class="btn btn-sm btn-outline-secondary" href="{% url 'userprofile:signup' %}">注册</a>
-          </div>
-      </div>
-    </header>
-
-     <div class="nav-scroller py-1 mb-2">
-        <nav class="nav d-flex justify-content-between">
-            <a class="p-2 text-muted" href="{% url 'article:homepage' %}">首页</a>
-            <a class="p-2 text-muted" href="{% url 'article:article_list' %}">文章列表</a>
-            <a class="p-2 text-muted" href="{% url 'article:article_create' %}">写文章</a>
-            <a class="p-2 text-muted" href="{% url 'mymovie:scrapedata' %}">爬虫数据</a>
-            <a class="p-2 text-muted" href="{% url 'polls:index' %}">Avengers</a>
-            <a class="p-2 text-muted" href="#">Technology</a>
-            <a class="p-2 text-muted" href="#">Design</a>
-            <a class="p-2 text-muted" href="#">Culture</a>
-            <a class="p-2 text-muted" href="#">Business</a>
-            <a class="p-2 text-muted" href="#">Politics</a>
-            <a class="p-2 text-muted" href="#">Opinion</a>
-            <a class="p-2 text-muted" href="#">Science</a>
-        </nav>
-    </div>
- </div>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'polls:index' %}">Avengers</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-md-0">
+        {% if user.is_authenticated %}
+            <li class="nav-item dropdown">
+                <a class="btn btn-outline-success mr-sm-2" href="#">{{ user.username }}</a>
+                <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item btn-sm" href="{% url 'userprofile:logout' %}">退出登录</a>
+                </div>
+            </li>
+        {% else %}
+            <a class="btn btn-outline-success mr-sm-2" href="{% url 'userprofile:login' %}">登录</a>
+        {% endif %}
+        <a class="btn btn-outline-success mr-sm-2" href="{% url 'userprofile:signup' %}">注册</a>
+        <input class="form-control mr-sm-2" type="text" placeholder="搜索" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜索</button>
+    </form>
+  </div>
+</nav>
