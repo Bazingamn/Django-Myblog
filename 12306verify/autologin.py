@@ -22,9 +22,9 @@ class Demo():
         account = driver.find_element_by_class_name("login-hd-account")
         account.click()
         userName = driver.find_element_by_id("J-userName")
-        userName.send_keys("15868508781")
+        userName.send_keys("***********")
         password = driver.find_element_by_id("J-password")
-        password.send_keys("135Itis99LoVe")
+        password.send_keys("***********")
         self.driver = driver
 
     def getVerifyImage(self):

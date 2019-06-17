@@ -4,6 +4,9 @@
     <list default="true" id="61f610be-eba9-4222-b1b2-37aaa587192a" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/article/static/bootstrap/css/carousel.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/article/static/bootstrap/css/navbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/article/static/images/img1.jpeg!heading" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/article/static/images/img2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/article/static/images/img3.jpeg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mymovie/static/bootstrap/css/navbar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../12306verify/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../12306verify/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../12306verify/autologin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../12306verify/autologin.py" afterDir="false" />
@@ -57,8 +60,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/article/static/bootstrap/css/carousel.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+            <state relative-caret-position="50">
+              <caret line="2" column="52" lean-forward="true" selection-start-line="2" selection-start-column="52" selection-end-line="2" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -151,7 +154,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-12" />
     <option name="y" value="-12" />
     <option name="width" value="1944" />
@@ -268,7 +271,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19459888" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -660,8 +662,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/article/static/bootstrap/css/carousel.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        <state relative-caret-position="50">
+          <caret line="2" column="52" lean-forward="true" selection-start-line="2" selection-start-column="52" selection-end-line="2" selection-end-column="52" />
         </state>
       </provider>
     </entry>
